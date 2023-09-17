@@ -1,0 +1,18 @@
+#sobre {
+   
+    background-color: none;
+
+    article{
+        h1{
+            color: $color-bg-default;
+            font-size: 3rem;
+            text-align: left;
+        }
+
+        p{
+            font-size: $font-size-default;
+            color: $color-font;
+
+        }
+    }
+}

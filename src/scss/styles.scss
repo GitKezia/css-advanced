@@ -1,26 +1,48 @@
-        $color-font: #fff;
-        $color-bg-default: #33f;
-        $color-bg-boxes: rgb(97, 3, 69);
-        $backgroug-bg-color: #d14141;
+        $color-font: #030303;
+        $color-bg-default: #949565;
+        $color-bg-boxes: #c1bd96;
+        $color-bg-background: #e4dec7;
+        $color-bg-font: 	#dbd3ab;
+        $color-bg-button: 	#FFEBCD;
         $font-default: Arial, Helvetica, sans-serif;
         $font-size-default: 1.6rem;
+        $font-size-navigation: 1.8rem;
 
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Oswald&display=swap');
+      
         html {
             font-size: 62.5%;
+            scroll-behavior: smooth;
         }
         body {
-            background: url('../assets/background.jpg') no-repeat top center;
-            background-size: cover;
-            font-family: $font-default;
+            background-color: #fff;
             margin: 0;
         }
 
-        h1, h2 {
+        h1 {
             color: $color-font;
             text-align: center;
-            width: 100%;
+            margin-top: 4rem;
         }
 
+        article {
+            h1{
+                color: $color-bg-default;
+                font-size: 3rem;
+                text-align: left;
+            }
+        }
+
+        h2 {
+            color: #fff;
+            font-family: 'Dancing Script', 'Oswald', cursive, ;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-top: 4rem;
+            text-shadow: 1px 5px 8px #fd87aa;
+           
+        }
+        #root,
         header,
         section,
         footer {
@@ -29,125 +51,30 @@
             width: 100%;
         }
 
+
+        section{
+            padding: 4rem 0;
+            margin: 0;
+        }
+
+
+       
+
         .container {
             display: flex;
             flex-flow: column;
-            max-width: 90vw;
             margin: 0 auto;
+            width: 85vw;
+
+        }
+
+         
+        @import 'sobre';
+        @import 'produtos';
+        @import 'animations';
+        @import 'vitrine';
+        @import 'nav';
+        @import 'header';
+        @import 'footer';
             
-           /* img {
-             //   width: 100%;
-               // height: auto;
-            }
-          */
-        }
-
-        #sobre {
-            background-color: rgb(158, 231, 75);
-        }
-
-        @import '__vitrine'
-
-
-
-
-
-       /*
-       .box_container {
-          background: $color-bg-boxes;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          padding: 1rem;
-          max-width: 500px;
-
-           &--around {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: stretch;
-            
-           }
-
-           &--between {
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
-            justify-content: space-between; // eixo x
-            align-items: flex-end; // eixo y
-           }
-
-           &--evenly {
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: flex-end;
-           }
-
-           &--between {
-            flex-direction: row-reverse;
-            flex-wrap: nowrap;
-            justify-content: center;
-           }
-
-           &--grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            gap: 1rem;
-            height: fit-content;
-           }
-
-           &--image {
-            .box {
-                overflow: hidden;
-                border: 3px solid $color-bg-default;
-                width: 15rem;
-                img {
-                    width: 20rem;
-                    height: 20rem;
-                   object-fit: cover;
-                   object-position: 80% 100%;
-                }
-            }
-           }
-
-
-
-
-        }
-        .box {
-            background-color: $backgroug-bg-color;
-            color: $color-font;
-            display: flex;
-            border-radius: 1rem;
-            align-items: center;
-            justify-content: center;
-            margin: .5rem;
-            position: relative;
-            border: 2px solid $color-font;
-            min-width: 10rem;
-            min-height: 10rem;
-
-            animation-name: slideIn;
-            animation-duration: 3s;
-            animation-iteration-count: 2;
-            animation-direction: alternate;
-        }
-
-        @keyframes slideIn {
-            from {
-                left: -999px;
-                opacity: .1;
-                height: 0;
-                width: 0;
-            }
-
-            to {
-                left: 0;
-                opacity: 1;
-                height: fit-content;
-            }
-        }
-        */
         
