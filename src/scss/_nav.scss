@@ -3,16 +3,20 @@
     justify-content: space-between;
     width: 280px;
     align-items: center;
+   
     &__item {
         color: black;
-        font-size: $font-size-navigation;
+        font-size: 3rem;
         text-decoration: none;
         position: relative;
+        font-family: 'Satisfy', cursive;
+        font-family: 'Tangerine', cursive;
         &:hover {
-            color: rgb(107, 247, 94);
+            color: $color-bg-button;
             animation: toTop;
             animation-duration: 1s;
         }
+
 }
 
 }

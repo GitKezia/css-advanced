@@ -5,7 +5,7 @@
         $color-bg-font: 	#dbd3ab;
         $color-bg-button: 	#FFEBCD;
         $font-default: Arial, Helvetica, sans-serif;
-        $font-size-default: 1.6rem;
+        $font-size-default: 2.5rem;
         $font-size-navigation: 1.8rem;
 
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Oswald&display=swap');
@@ -20,15 +20,23 @@
         }
 
         h1 {
-            color: $color-font;
-            text-align: center;
-            margin-top: 4rem;
+            color: $color-bg-default;
+            font-family: 'Satisfy', cursive;
+            font-family: 'Tangerine', cursive;
+            font-size: 5rem;
+            text-align: left;
+        }
+
+        .logo {
+            position: center;
         }
 
         article {
+            font-family: 'Satisfy', cursive;
+            font-family: 'Tangerine', cursive;
             h1{
                 color: $color-bg-default;
-                font-size: 3rem;
+                font-size: 5rem;
                 text-align: left;
             }
         }
@@ -76,5 +84,6 @@
         @import 'nav';
         @import 'header';
         @import 'footer';
+        @import 'contato'
             
         
