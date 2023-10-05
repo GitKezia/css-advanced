@@ -12,7 +12,9 @@ background-position: center;
 height: 45rem;
 display: flex;
 padding-bottom: 4rem;
+overflow: hidden;
 width: 100%;
+border: 2px solid black;
 
 h1 {
     font-size: 4rem;
@@ -23,6 +25,17 @@ h1 {
     text-align: center;
     height: 30rem;
     width: 100%;
+}
+
+@media (max-width: 767px){
+    img {
+        margin-left: -50%;
+        position: relative;
+        width: 230%;
+        max-width: none;
+        margin-right: -68%;
+        margin-top: 90px;
+    }
 }
 
 }
