@@ -1,0 +1,118 @@
+$color-font: #fff;
+$color-bg-default: #33f;
+$font-default: Arial, Helvetica, sans-serif;
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tangerine&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+body {
+//  background: url('') no-repeat top center;
+    background-size: cover;
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
+}
+
+.container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    img { 
+        height: 200px;
+        width: auto;
+        margin: 5px;
+        object-fit: fill;
+        object-position: bottom;
+        border: 1px solid black;
+
+        &:hover{
+            opacity: 75%;
+            border: rgb(177, 174, 174);
+        }
+    }
+}
+
+header {
+    background-image: url(/src//assets/halloween.webp);
+    width: 100%;
+    height: auto;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+
+    h1{
+        margin: 5rem;
+        position: relative;
+
+    }
+   
+}
+
+.waves{
+    bottom: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 110%;
+
+    .wave-01{
+        animation: wave1 3s ease-in-out infinite alternate;
+       
+
+    }
+
+   .wave-02{
+        animation: orangewave 3s ease-in-out infinite alternate;
+
+    }
+
+    .wave-03{
+        animation: dash1 10s 3s cubic-bezier(0, 1.23, 1, 0.11) infinite alternate;
+        stroke-dasharray: 150;
+        stroke: black;
+        stroke-width: 3px;
+
+    }
+
+}
+
+@keyframes orangewave {
+    from {
+        transform: translate(-50px);
+    }
+
+} 
+
+@keyframes purplewave{
+    from {
+        transform: translate(-100px);
+    }
+}
+
+@keyframes yellowwave {
+    from {
+        transform: translate(-20px);
+    }
+}
+
+@keyframes dash1 {
+    from {
+        stroke-dashoffset: 2000;
+    }
+    to {
+
+    }
+}
+
+@import 'player';
+

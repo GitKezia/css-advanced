@@ -1,0 +1,19 @@
+body h2{
+    font-family: 'Satisfy', cursive !important;
+    font-family: 'Tangerine', cursive !important;
+    font-size: 30px;
+    color: #ee9518;
+    
+    &:hover {
+        color: purple;
+    }
+}
+@font-face {
+    font-family: 'cf_halloweenregular' !important;
+    src: url('../fonts/cfhalloween-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cfhalloween-regular-webfont.woff') format('woff'),
+         url('../fonts/CFHalloween-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
